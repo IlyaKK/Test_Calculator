@@ -49,11 +49,12 @@ public class MainActivity extends AppCompatActivity {
 
                 @Override
                 public void onTextChanged(CharSequence charSequence, int start, int before, int count) {
-                    expressionEditText.setError(null);
                     if (start > 0 && count > 0) {
                         if (!checkers.checkInsertSymbol(charSequence, charSequence.toString().charAt(start - 1), charSequence.toString().charAt(start))) {
                             expressionEditText.setError(getResources().getString(R.string.insert_another_symbol));
                         }
+                    }else {
+                        expressionEditText.setError(null);
                     }
                 }
 
