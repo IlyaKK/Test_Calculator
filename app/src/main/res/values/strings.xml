@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Test Calculator</string>
+    <string name="insert_another_symbol">"Введите другой символ"</string>
+    <string name="insert_expression_for_calculation">Введите выражанеие для вычисления</string>
+    <string name="calculate">Вычислить</string>
+    <string name="result_calculation">Результат вычисления</string>
+</resources>
